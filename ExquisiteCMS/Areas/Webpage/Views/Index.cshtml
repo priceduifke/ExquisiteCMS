@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ExquisiteCMS.Areas.Webpage.Data.Entities.Page>
+@{
+    ViewBag.Title = "Page Overview";
+    Layout = "~/Views/Shared/Master.cshtml";
+}
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@Html.DisplayFor(modelItem => item.Title)</li>
+    }
+</ul>
